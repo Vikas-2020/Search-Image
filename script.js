@@ -18,7 +18,7 @@ let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 async function fetchPhotos(query, pageNumber = 1) {
     try {
         const response = await fetch(
-            `https://api.pexels.com/v1/search?query=${query}&per_page=6&page=${pageNumber}`, 
+            `https://api.pexels.com/v1/search?query=${query}&per_page=9&page=${pageNumber}`, 
             {
                 headers: { Authorization: apiKey }
             }
